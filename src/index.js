@@ -36,7 +36,7 @@ var Card = React.createClass({
   render: function() {
     return (
       <div className="col-sm-2">
-        <img className="img-responsive" src={"http://golearntocode.com/images/cards/" + this.props.hands + ".png"}/>
+        <img className="img-responsive" src={"http://golearntocode.com/images/cards/" + this.props.hand + ".png"}/>
       </div>
     )
   }
@@ -59,11 +59,11 @@ var App = React.createClass({
       <div className="container">
         <h1>Welcome to the KIEI-924 Casino!</h1>
         <div className="row">
-          <Card hands={this.state.hand[0]}/>
-          <Card hands={this.state.hand[1]}/>
-          <Card hands={this.state.hand[2]}/>
-          <Card hands={this.state.hand[3]}/>
-          <Card hands={this.state.hand[4]}/>
+          <Card hand={this.state.hand[0]}/>
+          <Card hand={this.state.hand[1]}/>
+          <Card hand={this.state.hand[2]}/>
+          <Card hand={this.state.hand[3]}/>
+          <Card hand={this.state.hand[4]}/>
           <div className="col-sm-2">
             <a href="#" className="btn btn-success" onClick={this.shuffleCards}>Deal</a>
           </div>
