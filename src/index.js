@@ -43,7 +43,7 @@ var Card = React.createClass({
 })
 
 var App = React.createClass({
-  shuffleCards: function(hand) {
+  shuffleCards: function() {
   var currentHand = window.getDeck().shuffle()
   this.setState({
     hand: currentHand
